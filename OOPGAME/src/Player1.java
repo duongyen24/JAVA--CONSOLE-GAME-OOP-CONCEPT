@@ -21,7 +21,7 @@ public class Player1 {
 		}
 		
 		//sysout + ctrl space
-		System.out.println("got hit by gun 1. new heath is "+ this.heath );
+		System.out.println("got hit by gun 1." + " new heath is "+ this.heath );
 		
 		
 	}
