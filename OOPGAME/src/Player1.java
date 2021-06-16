@@ -7,7 +7,7 @@ public class Player1 {
 	
 	// create constructor : alt shift S
 	public Player1(String name, String weapon, int heath) {
-		super();
+		
 		this.name = name;
 		this.weapon = weapon;
 		this.heath = heath;
