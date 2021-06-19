@@ -10,7 +10,10 @@ public class Player1 {
 		
 		this.name = name;
 		this.weapon = weapon;
-		this.heath = heath;
+		// limit user access heath by using encapsulation
+		if(heath < 0 || heath >100 ) {
+			this.heath = 100;
+		}else this.heath = heath;
 	}
 	
 	// create a method
@@ -44,6 +47,14 @@ public class Player1 {
 		
 	}
 
+	// heal method
+	public void heal() {
+		if(this.heath <= 0 ) System.out.println("heal is impossible");
+		else {
+			this.heath = 100;
+			System.out.println("heath is " + this.heath);
+		}
+	}
 	
 	//generate getter and setter
 	
