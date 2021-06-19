@@ -17,17 +17,15 @@ public class Player2 extends Player1 {
 		if(armour) { // armour on
 			this.heath -= 20;
 			if(this.heath <= 0) {
-				this.heath = 0;
-				System.out.println("armour on, got hit by gun 1, reduce 20 " + "new heath is" + this.heath);
-			}
-		}
+				this.heath = 0;				
+			} System.out.println("armour on, got hit by gun 1, reduce 20 " + "new heath is" + this.heath);
+		} 
 		if (!armour) {
 			this.heath -= 30;
 			if(this.heath <= 0) {
 				this.heath = 0;
-				System.out.println("armour off, got hit by gun 1, reduce 30 " + "new heath is" + this.heath);
-			}
-		}
+			} System.out.println("armour off, got hit by gun 1, reduce 30 " + "new heath is" + this.heath);
+		} 
 		
 		if(this.heath == 0) {
 			System.out.println(getName()+ " is dead");
@@ -58,6 +56,14 @@ public class Player2 extends Player1 {
 		}
 	
 	}
+
+	@Override
+	public void heal() {
+		// TODO Auto-generated method stub
+		super.heal();
+	}
+	
+	
 	
 
 
